@@ -8,8 +8,13 @@ public class Boss extends GameEntity{
         return weaponBoss;
 
     }
-
     public void setWeaponBoss(String weaponBoss) {
         this.weaponBoss = weaponBoss;
+
     }
+
+    public String prinlnInfo() {
+        return super.info() + " Weapon: " + this.bossWeapon;
+    }
+
 }
